@@ -1,0 +1,190 @@
+.hidden {
+  display: none;
+}
+
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --grey: #6b7280;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+  --light: #eee;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #fff;
+  background-color: var(--dark);
+}
+
+header {
+  padding: 2rem 1rem 0rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#clock {
+  font-size: 8rem;
+  font-weight: 1000;
+  color: var(--light);
+  margin-bottom: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#greeting {
+  font-size: 6rem;
+  font-weight: 1000;
+  color: var(--light);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#login-form {
+  display: flex;
+}
+
+/* remove all the styles of the buttons and inputs */
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#login-wrapper {
+  margin-bottom: 1.5rem;
+}
+#login-form input {
+  flex: 1 1 0%;
+  background-color: var(--darker);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+  color: var(--light);
+  font-size: 1.25rem;
+}
+
+#login-form input::placeholder {
+  color: var(--grey);
+}
+
+#login-form button {
+  color: var(--pink);
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#login-form button:hover {
+  opacity: 0.8;
+}
+
+#login-form button:active {
+  opacity: 0.8;
+}
+
+main {
+  flex: 1 1 0%;
+  padding: 0rem 1rem 0rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#todo-form {
+  display: flex;
+}
+
+#todo-form input {
+  flex: 1 1 0%;
+  background-color: var(--darker);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+  color: var(--light);
+  font-size: 1.25rem;
+}
+
+#todo-form input::placeholder {
+  color: var(--grey);
+}
+
+#greeting {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 550;
+}
+
+.task-list {
+  padding: 1rem;
+}
+
+.task-list h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+#tasks ul {
+  list-style: none;
+  padding-left: 0;
+}
+#tasks li {
+  display: flex;
+  background-color: var(--darkest);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+#tasks li span {
+  color: var(--light);
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+#tasks li button {
+  color: crimson;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+#tasks li button:hover {
+  opacity: 0.8;
+}
+
+#tasks li button:active {
+  opacity: 0.8;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-top: 0rem;
+  width: 100%;
+}
+
+#quote span {
+  margin: 0 auto;
+  padding: 0.2rem;
+}

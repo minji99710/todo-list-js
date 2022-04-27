@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum</title>
+  </head>
+  <body>
+    <!-- form's default behavior is to submit(refresh) -->
+    <!-- to trigger the validation of the input, input has to be inside the "form" -->
+
+    <header>
+      <h2 id="clock">00:00</h2>
+      <div id="login-wrapper" class="hidden">
+        <form id="login-form" class="hidden">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+          />
+          <button>Log In</button>
+        </form>
+      </div>
+      <h1 id="greeting" class="hidden"></h1>
+        <form id="todo-form">
+          <input type="text" placeholder="Write To Do and Press Enter" />
+        </form>
+    </header>
+
+    <main>
+      <section class="task-list">
+        <h2>📌Tasks</h2>
+        <div id="tasks">
+          <ul id="todo-list"></ul>
+        </div>
+      
+      </section>
+      
+  
+      <footer id="quote">
+        <span></span>
+        <span></span>
+      </footer>
+      <div id="weather">
+        <span></span>
+        <span></span>
+    </main>
+
+   
+    </div>
+
+    <!-- url's default behavior is to open the link -->
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+  </body>
+</html>
